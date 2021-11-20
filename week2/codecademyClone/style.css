@@ -314,3 +314,26 @@ header {
 .for-business-company-logo img {
   width: 5.2rem;
 }
+
+/* ----------- For Business Section ---------- */
+#start-for-free-section {
+  background-color: var(--blue-bg-color);
+}
+
+.start-for-free-wrapper {
+  padding: 3rem 0;
+}
+.start-for-free-lg-screen-img {
+  display: none;
+}
+.start-for-free-info {
+  color: var(--white-color);
+}
+.start-for-free-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.start-for-free-btn {
+  background-color: var(--yellow-bg-color);
+  margin-top: 1.5rem;
+}
