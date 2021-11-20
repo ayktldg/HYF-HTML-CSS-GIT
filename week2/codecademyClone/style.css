@@ -181,3 +181,51 @@ header {
   color: var(--white-color);
   letter-spacing: 1.5px;
 }
+
+/* ----------- People Stories Section ---------- */
+.people-stories-wrapper {
+  padding: 2rem 0;
+}
+.people-stories-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+.people-stories-cards-wrapper {
+  position: relative;
+  margin-top: 1rem;
+}
+.dotted-pattern-bg {
+  position: absolute;
+  top: -1rem;
+  left: -2rem;
+  width: 100vw;
+  height: 6rem;
+  z-index: -1;
+}
+.people-stories-card {
+  margin-bottom: 1rem;
+}
+.pp-wrapper img {
+  border: 1px solid black;
+}
+.people-stories-card a {
+  color: var(--text-color);
+}
+.profile-info h3 {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  font-size: 1.3rem;
+}
+.people-stories-explore-link {
+  text-align: center;
+}
+.people-stories-explore-link a {
+  color: var(--link-color);
+  font-weight: bold;
+  font-size: 14px;
+}
+.people-stories-explore-link i {
+  margin-left: 0.3rem;
+  font-size: 10px;
+}
