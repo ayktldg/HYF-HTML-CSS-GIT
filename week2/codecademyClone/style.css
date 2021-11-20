@@ -33,6 +33,17 @@ img {
   width: 100%;
   height: auto;
 }
+h1,
+h2,
+h3 {
+  margin: 1em 0;
+}
+button {
+  font-family: inherit;
+  padding: 0;
+  line-height: inherit;
+  border: none;
+}
 
 .container {
   width: 100%;
@@ -72,4 +83,46 @@ header {
   margin-left: 0.5rem;
   padding: 0.5rem;
   color: var(--text-color);
+}
+
+/* ----------- Main ---------- */
+
+/* ----------- Hero Section ---------- */
+.hero-signup-wrapper {
+  margin: 1rem 0;
+}
+.signup-title {
+  font-size: 1.6rem;
+}
+.signup-form label {
+  font-weight: 500;
+}
+.signup-form input {
+  width: 100%;
+  padding: 0.8rem 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.signup-btn {
+  padding: 0.25rem 1rem;
+  min-width: 40px;
+  height: 40px;
+  background-color: var(--blue-bg-color);
+  color: var(--white-color);
+  font-weight: 500;
+  border-radius: 4px;
+}
+.terms-policy {
+  margin: 1.5rem 0;
+}
+.signup-social-title {
+  font-size: 1rem;
+}
+.signup-social-icons {
+  display: flex;
+}
+.signup-icon {
+  padding: 0.8rem 1.2rem;
+  border: 1px solid black;
+  background-color: white;
+  margin-right: 1rem;
 }
