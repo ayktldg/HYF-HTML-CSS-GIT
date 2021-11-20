@@ -1,0 +1,75 @@
+:root {
+  --main-bg-color: #fcf0e5;
+  --white-color: #ffffff;
+  --blue-bg-color: #3a0fe5;
+  --dark-blue-bg-color: #10162f;
+  --yellow-bg-color: #f4d302;
+  --dark-beige-hover-color: #f1e3db;
+  --text-color: #10162f;
+  --link-color: #3810db;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ----------- Header ---------- */
+header {
+  font-size: 14px;
+  border-bottom: 1px solid var(--dark-blue-bg-color);
+}
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0;
+}
+.header-nav {
+  display: none;
+}
+.toggle-wrapper {
+  margin-left: auto;
+}
+.header-search-button {
+  display: none;
+}
+.header-login {
+  margin-left: 0.5rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.hamburger-menu {
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  color: var(--text-color);
+}
