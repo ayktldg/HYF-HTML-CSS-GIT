@@ -89,7 +89,7 @@ header {
 
 /* ----------- Hero Section ---------- */
 .hero-signup-wrapper {
-  margin: 1rem 0;
+  padding: 1rem 0;
 }
 .signup-title {
   font-size: 1.6rem;
@@ -125,4 +125,31 @@ header {
   border: 1px solid black;
   background-color: white;
   margin-right: 1rem;
+}
+
+/* ----------- Goals-Paths Section ---------- */
+.goals-paths-wrapper {
+  padding: 1rem 0;
+}
+.goals-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.goals-list-item {
+  border-bottom: 1px solid black;
+  padding: 0.5rem 2rem 0.5rem 0;
+  position: relative;
+}
+.goals-list-item h3,
+.goals-list-item i {
+  font-size: 1.2rem;
+}
+.goals-list-item > i {
+  position: absolute;
+  bottom: 1.9rem;
+  right: 2rem;
+}
+.paths-wrapper,
+.catalog-link-wrapper {
+  display: none;
 }
