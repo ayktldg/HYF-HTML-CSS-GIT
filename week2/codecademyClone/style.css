@@ -319,7 +319,6 @@ header {
 #start-for-free-section {
   background-color: var(--blue-bg-color);
 }
-
 .start-for-free-wrapper {
   padding: 3rem 0;
 }
@@ -336,4 +335,61 @@ header {
 .start-for-free-btn {
   background-color: var(--yellow-bg-color);
   margin-top: 1.5rem;
+}
+
+/* ----------- Footer ---------- */
+
+/* ----------- Footer Codecademy Info Section ---------- */
+.footer-codecademy-info-wrapper {
+  padding: 2rem 0;
+  font-size: 14px;
+  border-bottom: 1px solid black;
+  display: grid;
+  grid-template-areas:
+    "company resources"
+    "support community"
+    "individual enterprise"
+    "mobile mobile";
+}
+.company {
+  grid-area: company;
+}
+.resources {
+  grid-area: resources;
+}
+.support {
+  grid-area: support;
+}
+.community {
+  grid-area: community;
+}
+.individual {
+  grid-area: individual;
+}
+.enterprise {
+  grid-area: enterprise;
+}
+.mobile {
+  grid-area: mobile;
+}
+.mobile-list {
+  display: flex;
+}
+.mobile-list li:last-child {
+  margin-left: 3rem;
+}
+.footer-codecademy-info-wrapper h2 {
+  font-size: inherit;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.footer-list {
+  line-height: 2;
+}
+.footer-list a {
+  color: var(--text-color);
+}
+.footer-list i {
+  margin-right: 0.5rem;
+  font-size: initial;
 }
