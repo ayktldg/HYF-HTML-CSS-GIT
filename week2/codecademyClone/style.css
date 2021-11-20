@@ -369,6 +369,7 @@ footer h2 {
   margin-right: 0.5rem;
   font-size: initial;
 }
+
 /* ----------- Footer Course Catalog Section ---------- */
 .course-catalog-wrapper {
   padding: 2rem 0;
@@ -381,4 +382,32 @@ footer h2 {
 .subjects-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+/* ----------- Footer Policies Section ---------- */
+.policies-wrapper {
+  padding: 1rem 0;
+  text-align: center;
+}
+.policies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.policies-list li {
+  margin-right: 0.5rem;
+}
+.policies-list li::after {
+  content: "|";
+  margin-left: 0.5rem;
+}
+.policies-list li:last-child::after {
+  content: "";
+}
+.copyright {
+  margin-top: 0.8rem;
+}
+.copyright i {
+  color: red;
+  font-size: initial;
 }
