@@ -140,6 +140,9 @@ header {
   padding: 0.5rem 2rem 0.5rem 0;
   position: relative;
 }
+.goals-list-item:last-child {
+  border-bottom: none;
+}
 .goals-list-item h3,
 .goals-list-item i {
   font-size: 1.2rem;
@@ -152,4 +155,29 @@ header {
 .paths-wrapper,
 .catalog-link-wrapper {
   display: none;
+}
+
+/* ----------- Goals-Paths Section ---------- */
+#self-learning-section {
+  background-color: var(--dark-blue-bg-color);
+}
+
+.self-learning-wrapper {
+  padding: 1rem 0 3rem 0;
+}
+.self-learning-title {
+  font-size: 1.8rem;
+  color: var(--white-color);
+}
+.self-learning-img-wrapper {
+  margin-bottom: 1.5rem;
+}
+.self-learning-list-item {
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.self-learning-list-item a {
+  color: var(--white-color);
+  letter-spacing: 1.5px;
 }
