@@ -229,3 +229,29 @@ header {
   margin-left: 0.3rem;
   font-size: 10px;
 }
+
+/* ----------- Join Us Section ---------- */
+#join-us-section {
+  background-color: var(--blue-bg-color);
+  color: var(--white-color);
+}
+.join-us-wrapper {
+  padding: 2rem 0;
+}
+.join-us-title {
+  font-size: 2.1rem;
+  letter-spacing: 2px;
+}
+.numbers-of-subscription {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+.numbers-of-subscription span {
+  display: block;
+  text-align: center;
+}
+.numbers-of-subscription .number {
+  font-size: 2rem;
+  font-weight: 700;
+}
