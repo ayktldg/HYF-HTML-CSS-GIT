@@ -369,3 +369,16 @@ footer h2 {
   margin-right: 0.5rem;
   font-size: initial;
 }
+/* ----------- Footer Course Catalog Section ---------- */
+.course-catalog-wrapper {
+  padding: 2rem 0;
+  border-bottom: 1px solid black;
+}
+.course-catalog-wrapper h3 {
+  font-size: 0.8rem;
+}
+.languages-list,
+.subjects-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
