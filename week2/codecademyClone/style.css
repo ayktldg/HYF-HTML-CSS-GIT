@@ -170,14 +170,14 @@ header {
   padding: 1rem 0 3rem 0;
 }
 .self-learning-title {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   color: var(--white-color);
 }
 .self-learning-img-wrapper {
   margin-bottom: 1.5rem;
 }
 .self-learning-list-item {
-  padding: 0.5rem 0 0.5rem 0.5rem;
+  padding: 0.5rem;
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
 }
@@ -445,7 +445,13 @@ footer h2 {
   .hero-img-wrapper img {
     max-width: 26rem;
   }
-  /* ------ Medium Media Goals-Paths Section ----- */
+  /* ------ Medium Media Self-learning Section ----- */
+  .self-learning-title {
+    font-size: 2.8rem;
+  }
+  .self-learning-img-wrapper {
+    width: 70%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -546,5 +552,31 @@ footer h2 {
     position: initial;
     font-size: 12px;
     margin-left: 4px;
+  }
+  /* ------ Large Media Self-learning Section ----- */
+
+  .self-learning-wrapper {
+    display: grid;
+    grid-template-areas:
+      "title image image"
+      "list image image";
+    column-gap: 3rem;
+    padding-top: 3rem;
+  }
+  .self-learning-title {
+    grid-area: title;
+    line-height: 1.2;
+    align-self: center;
+    margin: 0;
+  }
+  .self-learning-img-wrapper {
+    width: 100%;
+    grid-area: image;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-bottom: 0;
+  }
+  .self-learning-list {
+    grid-area: list;
   }
 }
