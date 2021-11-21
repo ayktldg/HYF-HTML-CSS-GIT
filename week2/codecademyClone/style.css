@@ -153,11 +153,12 @@ header {
   right: 2rem;
 }
 .paths-wrapper,
-.catalog-link-wrapper {
+.catalog-link-wrapper,
+.build-career > p {
   display: none;
 }
 
-/* ----------- Goals-Paths Section ---------- */
+/* ----------- Self Learning Section ---------- */
 #self-learning-section {
   background-color: var(--dark-blue-bg-color);
 }
@@ -410,4 +411,15 @@ footer h2 {
 .copyright i {
   color: red;
   font-size: initial;
+}
+
+/* ----------- Media Queries ---------- */
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1024px) {
 }
