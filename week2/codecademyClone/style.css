@@ -1,10 +1,12 @@
 :root {
   --main-bg-color: #fcf0e5;
   --white-color: #ffffff;
+  --black-color: #000000;
   --blue-bg-color: #3a0fe5;
   --dark-blue-bg-color: #10162f;
   --yellow-bg-color: #f4d302;
   --dark-beige-hover-color: #f1e3db;
+  --light-pink-bg-color: #fef5ff;
   --text-color: #10162f;
   --link-color: #3810db;
 }
@@ -137,21 +139,22 @@ header {
 }
 .goals-list-item {
   border-bottom: 1px solid black;
-  padding: 0.5rem 2rem 0.5rem 0;
+  padding: 0.5rem 0;
   position: relative;
 }
 .goals-list-item:last-child {
   border-bottom: none;
 }
 .goals-list-item h3,
-.goals-list-item i {
+.goals-list-item > i {
   font-size: 1.2rem;
 }
-.goals-list-item i {
+.goals-list-item > i {
   position: absolute;
   bottom: 1.9rem;
   right: 2rem;
 }
+
 .paths-wrapper,
 .catalog-link-wrapper,
 .build-career > p {
@@ -314,7 +317,7 @@ header {
   width: 5.2rem;
 }
 
-/* ----------- For Business Section ---------- */
+/* ----------- Start For Free Section ---------- */
 #start-for-free-section {
   background-color: var(--blue-bg-color);
 }
@@ -416,19 +419,20 @@ footer h2 {
 /* ----------- Media Queries ---------- */
 
 @media only screen and (min-width: 600px) {
-  /* ------ Media Hero Section ----- */
+  /* ------ Small Media Hero Section ----- */
   .hero-signup-wrapper {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
+  /* ------ Small Media Goals-Paths Section ----- */
 }
 
 @media only screen and (min-width: 768px) {
   .container {
     padding: 0 4rem;
   }
-  /* ------ Media Hero Section ----- */
+  /* ------Medium Media Hero Section ----- */
   .hero-signup-wrapper {
     width: 100%;
     display: grid;
@@ -441,6 +445,7 @@ footer h2 {
   .hero-img-wrapper img {
     max-width: 26rem;
   }
+  /* ------ Medium Media Goals-Paths Section ----- */
 }
 
 @media only screen and (min-width: 1024px) {
@@ -448,8 +453,98 @@ footer h2 {
     max-width: 1440px;
     padding: 0 6rem;
   }
-  /* ------ Media Hero Section ----- */
+  /* ------ Large Media Hero Section ----- */
   .hero-img-wrapper img {
     max-width: 32rem;
+  }
+  /* ------ Large Media Goals-Paths Section ----- */
+  .goals-list .build-career > i {
+    display: none;
+  }
+  .paths-wrapper,
+  .catalog-link-wrapper,
+  .build-career > p {
+    display: block;
+  }
+  .goals-paths-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    column-gap: 2rem;
+  }
+  .paths-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+  .goals-title {
+    font-size: 2.9rem;
+    margin-top: 0;
+  }
+  .path-box {
+    margin-bottom: 0;
+  }
+  .paths-wrapper {
+    background: url("./img/paths-dot-pattern.svg");
+    padding: 2rem;
+  }
+  .path-box {
+    width: 100%;
+    min-height: 11.25rem;
+    background-color: var(--white-color);
+    padding: 1rem;
+    border: 1px solid var(--black-color);
+    margin-bottom: 1rem;
+    font-size: 14px;
+    position: relative;
+  }
+  .path-box-head span:first-child {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    margin-right: 0.5rem;
+    font-weight: 400;
+    padding: 0 2px;
+  }
+  .path-box-head span:last-child {
+    letter-spacing: 2px;
+  }
+  .path-box-title {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .path-box-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .black-dot {
+    background-color: var(--black-color);
+  }
+  .white-dot {
+    background-color: var(--white-color);
+    border: 1px solid var(--black-color);
+  }
+  .path-box-info-corner {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--light-pink-bg-color);
+    font-weight: 700;
+    padding: 2px 4px;
+  }
+  .catalog-link-wrapper {
+    margin-bottom: 1rem;
+    text-align: right;
+  }
+  .catalog-link {
+    color: var(--link-color);
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .catalog-link i {
+    position: initial;
+    font-size: 12px;
+    margin-left: 4px;
   }
 }
