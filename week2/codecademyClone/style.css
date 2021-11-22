@@ -199,14 +199,14 @@ header {
   margin-top: 1.5rem;
   position: relative;
 }
-.dotted-pattern-bg {
+/* .dotted-pattern-bg {
   position: absolute;
   top: -1rem;
   left: -50rem;
   width: 2400px;
   height: 6rem;
   z-index: -1;
-}
+} */
 .people-stories-card {
   margin-bottom: 1rem;
 }
@@ -427,7 +427,7 @@ footer h2 {
 
 /* ----------- Media Queries ---------- */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 480px) {
   /* ------ Small Media Hero Section ----- */
   .hero-signup-wrapper {
     width: 70%;
@@ -560,12 +560,47 @@ footer h2 {
     width: 70%;
     justify-self: end;
   }
+  /* ----------- Medium Media Footer  ---------- */
+  .mobile {
+    grid-column: span 1;
+  }
+  .mobile-list {
+    flex-direction: column;
+  }
+  .mobile-list li {
+    flex: 0;
+  }
+  .mobile-list li img {
+    width: 40%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
   .container {
     max-width: 1440px;
     padding: 0 6rem;
+  }
+  /* ----------- Large Media Header ---------- */
+  .header-nav {
+    display: block;
+  }
+  .nav-list {
+    display: flex;
+  }
+  .nav-list-item {
+    margin-left: 1.5rem;
+  }
+  .toggle-wrapper {
+    margin-left: auto;
+    display: flex;
+  }
+  .header-search-button {
+    display: block;
+    background: none;
+    font-size: 1.1rem;
+  }
+  .hamburger-menu {
+    display: none;
   }
   /* ------ Large Media Hero Section ----- */
   .hero-img-wrapper img {
@@ -732,12 +767,15 @@ footer h2 {
   #footer-policies-section {
     grid-column: 1 / 3;
   }
-  .mobile {
-    grid-column: span 1;
+  .footer-course-catalog-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
-  .mobile-list {
-    flex-direction: column;
-    width: 50%;
+  .subjects {
+    order: -1;
+  }
+  .subjects-list {
+    grid-template-columns: 1fr;
   }
   .footer-policies-wrapper {
     display: flex;
