@@ -202,8 +202,8 @@ header {
 .dotted-pattern-bg {
   position: absolute;
   top: -1rem;
-  left: -10rem;
-  width: 2000px;
+  left: -50rem;
+  width: 2400px;
   height: 6rem;
   z-index: -1;
 }
@@ -345,6 +345,10 @@ header {
 footer {
   font-size: 13px;
 }
+.footer-wrapper {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 footer li {
   line-height: 2;
 }
@@ -354,8 +358,9 @@ footer h2 {
   text-transform: uppercase;
 }
 .footer-codecademy-info-wrapper {
-  padding: 2rem 0;
-  border-bottom: 1px solid black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--black-color);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(7, auto);
@@ -366,8 +371,11 @@ footer h2 {
 .mobile-list {
   display: flex;
 }
-.mobile-list li:last-child {
-  margin-left: 3rem;
+.mobile-list li {
+  flex: 1;
+}
+.mobile-list li img {
+  width: 50%;
 }
 .footer-list i {
   margin-right: 0.5rem;
@@ -375,9 +383,9 @@ footer h2 {
 }
 
 /* ----------- Footer Course Catalog Section ---------- */
-.course-catalog-wrapper {
-  padding: 2rem 0;
-  border-bottom: 1px solid black;
+.footer-course-catalog-wrapper {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .course-catalog-wrapper h3 {
   font-size: 0.8rem;
@@ -389,9 +397,10 @@ footer h2 {
 }
 
 /* ----------- Footer Policies Section ---------- */
-.policies-wrapper {
-  padding: 1rem 0;
+.footer-policies-wrapper {
+  padding-top: 1rem;
   text-align: center;
+  border-top: 1px solid var(--black-color);
 }
 .policies-list {
   display: flex;
@@ -708,5 +717,31 @@ footer h2 {
     grid-template-rows: repeat(2, 1fr);
     row-gap: 0;
     align-self: center;
+  }
+  /* ----------- Large Media Footer ---------- */
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+  }
+  .footer-codecademy-info-wrapper {
+    border-bottom: none;
+    border-right: 1px solid var(--black-color);
+  }
+  #footer-policies-section {
+    grid-column: 1 / 3;
+  }
+  .mobile {
+    grid-column: span 1;
+  }
+  .mobile-list {
+    flex-direction: column;
+    width: 50%;
+  }
+  .footer-policies-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
