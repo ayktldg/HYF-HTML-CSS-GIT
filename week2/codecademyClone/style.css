@@ -196,14 +196,14 @@ header {
   letter-spacing: 1px;
 }
 .people-stories-cards-wrapper {
+  margin-top: 1.5rem;
   position: relative;
-  margin-top: 1rem;
 }
 .dotted-pattern-bg {
   position: absolute;
   top: -1rem;
-  left: -2rem;
-  width: 100vw;
+  left: -10rem;
+  width: 2000px;
   height: 6rem;
   z-index: -1;
 }
@@ -452,6 +452,21 @@ footer h2 {
   .self-learning-img-wrapper {
     width: 70%;
   }
+  /* ------ Medium Media People Stories Section ----- */
+  .people-stories-wrapper {
+    position: relative;
+  }
+  .people-stories-explore-link {
+    position: absolute;
+    top: 7rem;
+    right: 1rem;
+  }
+  .people-stories-cards-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -578,5 +593,13 @@ footer h2 {
   }
   .self-learning-list {
     grid-area: list;
+  }
+  /* ------ Large Media People Stories Section ----- */
+  .people-stories-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 1rem;
+    row-gap: 0;
   }
 }
