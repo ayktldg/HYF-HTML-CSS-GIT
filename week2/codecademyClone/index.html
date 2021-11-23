@@ -16,7 +16,7 @@
   <body>
     <header id="header">
       <div class="container">
-        <div class="header-wrapper">
+        <div class="wrapper header-wrapper">
           <a class="header-logo" href="#">
             <img src="./img/codecademy.svg" alt="codecademy-logo" />
           </a>
@@ -49,7 +49,7 @@
       <!-- ---------- hero-section ---------- -->
       <section id="hero-section">
         <div class="container">
-          <div class="hero-signup-wrapper">
+          <div class="wrapper hero-signup-wrapper">
             <div class="hero-img-wrapper">
               <img
                 src="./img/hero-sign-up.webp"
@@ -62,12 +62,14 @@
               </h1>
               <div class="form-wrapper">
                 <form action="" class="signup-form">
-                  <div>
+                  <div class="email-label-wrapper">
                     <label for="email">Email</label>
                   </div>
-                  <div><input id="email" name="email" type="email" /></div>
-                  <div><label for="password">Password</label></div>
-                  <div><input id="password" name="email" type="password" /></div>
+                  <div class="email-input-wrapper"><input id="email" name="email" type="email" /></div>
+                  <div class="password-label-wrapper"><label for="password">Password</label><i class="fas fa-exclamation-circle"></i><div class="form-info-box"><p>Create a secure password with at least 8 characters. Avoid simple phrases or strings like “password”, “qwerty”, or “12345”.</p><p>If your password is too weak, try including:</p><ul><li>At least 1 letter and 1 number</li>
+                  <li>A symbol (like !@#$%^)</li>
+                  <li>A mix of upper and lower case letters</li></ul></div></div>
+                  <div class="password-input-wrapper"><input id="password" name="email" type="password" /></div>
                   <button class="signup-btn" type="submit">Sign up</button>
                 </form>
               </div>
@@ -101,7 +103,7 @@
       <!-- ---------- goals-paths-section ---------- -->
       <section id="goals-paths-section">
         <div class="container">
-          <div class="goals-paths-wrapper">
+          <div class="wrapper goals-paths-wrapper">
             <div class="goals-wrapper">
               <h2 class="goals-title">What’s your goal?</h2>
               <ul class="goals-list">
@@ -180,8 +182,8 @@
       <!-- ---------- self-learning-section ---------- -->
       <section id="self-learning-section">
         <div class="container">
-          <div class="self-learning-wrapper">
-            <h3 class="self-learning-title">Self-paced learning that works</h3>
+          <div class="wrapper self-learning-wrapper">
+            <h2 class="self-learning-title">Self-paced learning that works</h2>
               <div class="self-learning-img-wrapper">
                 <img
                   src="./img/self-learning.webp"
@@ -210,7 +212,7 @@
       <!-- ---------- people-stories-section ---------- -->
       <section id="people-stories-section">
         <div class="container">
-          <div class="people-stories-wrapper">
+          <div class="wrapper people-stories-wrapper">
             <div class="people-stories-head">
               <h2 class="people-stories-title">Stories from real people</h2>
               <div>
@@ -220,20 +222,6 @@
               </div>
             </div>
             <div class="people-stories-cards-wrapper">
-              <!-- <div class="dotted-pattern-bg">
-                 ----------  svg is generated from https://doodad.dev/pattern-generator/ ---------- 
-                <svg height="100%" width="100%">
-                  <defs>
-                    <pattern id="doodad" width="7" height="7" viewBox="0 0 40 40" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
-                      <rect width="100%" height="100%" fill="rgba(252, 240, 229,1)"/>
-                      <circle cx="40" cy="20" r="0.75" fill="rgba(0, 0, 0,1)"/>
-                      <circle cx="0" cy="20" r="1.5" fill="rgba(0, 0, 0,1)"/>
-                      <circle cx="40" cy="20" r="1.5" fill="rgba(0, 0, 0,1)"/>
-                    </pattern>
-                  </defs>
-                  <rect fill="url(#doodad)" height="200%" width="200%"/>
-                </svg>                
-              </div> -->
               <div class="people-stories-card">
                 <a href="#">
                   <div class="pp-wrapper">
@@ -298,7 +286,7 @@
       <!-- ---------- join-us-section ---------- -->
       <section id="join-us-section">
         <div class="container">
-          <div class="join-us-wrapper">
+          <div class="wrapper join-us-wrapper">
           <div class="join-us">
             <h2 class="join-us-title">Join in on something big</h2>
           </div>
@@ -313,7 +301,7 @@
       <!-- ---------- where-to-start-section ---------- -->
       <section id="where-to-start-section">
         <div class="container">
-          <div class="where-to-start-wrapper">
+          <div class="wrapper where-to-start-wrapper">
             <div class="where-to-start-img-wrapper">
               <img src="./img/clouds.svg" alt="clouds picture in blue air" />
             </div>
@@ -331,7 +319,7 @@
       <!-- ---------- for-business-section ---------- -->
       <section id="for-business-section">
         <div class="container">
-          <div class="for-business-wrapper">
+          <div class="wrapper for-business-wrapper">
             <div class="for-business-info">
               <span>Codecademy for Business</span>
               <h2>Level up your team's skills</h2>
@@ -376,7 +364,7 @@
       <!-- ---------- start-for-free-section ---------- -->
       <section id="start-for-free-section">
         <div class="container">
-          <div class="start-for-free-wrapper">
+          <div class="wrapper start-for-free-wrapper">
             <div class="start-for-free-img-wrapper">
               <img
               class="start-for-free-sm-screen-img"
@@ -399,7 +387,7 @@
     </main>
     <footer id="footer">
       <div class="container">
-        <div class="footer-wrapper">
+        <div class="wrapper footer-wrapper">
         <!-- ---------- footer-codecademy-info-section ---------- -->
         <section id="footer-codecademy-info-section">
           <div class="footer-codecademy-info-wrapper">

@@ -10,21 +10,19 @@
   --text-color: #10162f;
   --link-color: #3810db;
 }
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: var(--main-bg-color);
   color: var(--text-color);
   line-height: 1.5;
+  font-size: 14px;
 }
-
 a {
   text-decoration: none;
   color: var(--text-color);
@@ -34,12 +32,16 @@ li {
 }
 img {
   width: 100%;
-  max-height: 100%;
+  height: auto;
 }
 h1,
 h2,
 h3 {
   margin: 1em 0;
+}
+h2 {
+  font-size: 2rem;
+  letter-spacing: 1px;
 }
 button {
   font-family: inherit;
@@ -51,7 +53,6 @@ button {
   height: 40px;
   font-weight: 500;
 }
-
 .container {
   width: 100%;
   height: 100%;
@@ -60,16 +61,20 @@ button {
   margin-left: auto;
   margin-right: auto;
 }
+.wrapper {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 
 /* ----------- Header ---------- */
 header {
-  font-size: 14px;
   border-bottom: 1px solid var(--dark-blue-bg-color);
 }
 .header-wrapper {
   display: flex;
   align-items: center;
-  padding: 0.75rem 0;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 .header-nav {
   display: none;
@@ -96,7 +101,7 @@ header {
 
 /* ----------- Hero Section ---------- */
 .hero-signup-wrapper {
-  padding: 1rem 0;
+  padding-top: 1rem;
 }
 .signup-title {
   font-size: 1.6rem;
@@ -109,12 +114,39 @@ header {
   padding: 0.8rem 0.5rem;
   margin-bottom: 1.5rem;
 }
+.password-label-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.form-info-box {
+  display: none;
+}
+.form-info-box p {
+  margin-bottom: 1rem;
+}
+.form-info-box li {
+  list-style: initial;
+  margin-left: 1rem;
+}
+.password-label-wrapper i:hover + .form-info-box {
+  position: absolute;
+  top: 1.5rem;
+  right: -1rem;
+  width: 14rem; /* 70% */
+  padding: 1rem;
+  background-color: var(--white-color);
+  border: 1px solid var(--black-color);
+  display: block;
+}
 .signup-btn {
   background-color: var(--blue-bg-color);
   color: var(--white-color);
 }
 .terms-policy {
-  margin: 1.5rem 0;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .signup-social-title {
   font-size: 1rem;
@@ -124,22 +156,19 @@ header {
 }
 .signup-icon {
   padding: 0.8rem 1.2rem;
-  border: 1px solid black;
-  background-color: white;
+  border: 1px solid var(--black-color);
+  background-color: var(--white-color);
   margin-right: 1rem;
 }
 
 /* ----------- Goals-Paths Section ---------- */
-.goals-paths-wrapper {
-  padding: 1rem 0;
-}
 .goals-title {
-  font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 .goals-list-item {
   border-bottom: 1px solid black;
-  padding: 0.5rem 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   position: relative;
 }
 .goals-list-item:last-child {
@@ -154,7 +183,6 @@ header {
   bottom: 1.9rem;
   right: 2rem;
 }
-
 .paths-wrapper,
 .catalog-link-wrapper,
 .build-career > p {
@@ -165,12 +193,11 @@ header {
 #self-learning-section {
   background-color: var(--dark-blue-bg-color);
 }
-
 .self-learning-wrapper {
-  padding: 1rem 0 3rem 0;
+  padding-top: 1rem;
 }
 .self-learning-title {
-  font-size: 2.2rem;
+  margin-top: 0;
   color: var(--white-color);
 }
 .self-learning-img-wrapper {
@@ -187,26 +214,13 @@ header {
 }
 
 /* ----------- People Stories Section ---------- */
-.people-stories-wrapper {
-  padding: 2rem 0;
-}
 .people-stories-title {
-  font-size: 1.8rem;
   margin-bottom: 0.5rem;
-  letter-spacing: 1px;
 }
 .people-stories-cards-wrapper {
   margin-top: 1.5rem;
   position: relative;
 }
-/* .dotted-pattern-bg {
-  position: absolute;
-  top: -1rem;
-  left: -50rem;
-  width: 2400px;
-  height: 6rem;
-  z-index: -1;
-} */
 .people-stories-card {
   margin-bottom: 1rem;
 }
@@ -224,7 +238,6 @@ header {
 .people-stories-explore-link a {
   color: var(--link-color);
   font-weight: bold;
-  font-size: 14px;
 }
 .people-stories-explore-link i {
   margin-left: 0.3rem;
@@ -236,17 +249,15 @@ header {
   background-color: var(--blue-bg-color);
   color: var(--white-color);
 }
-.join-us-wrapper {
-  padding: 2rem 0;
-}
 .join-us-title {
-  font-size: 2.1rem;
   letter-spacing: 2px;
+  width: 80%;
 }
 .numbers-of-subscription {
   display: flex;
   justify-content: space-between;
-  margin: 2rem 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .numbers-of-subscription span {
   display: block;
@@ -262,18 +273,16 @@ header {
   background-color: var(--yellow-bg-color);
 }
 .where-to-start-wrapper {
-  padding: 3rem 0;
+  padding-bottom: 4rem;
 }
 .where-to-start-img-wrapper {
   width: 50%;
   margin: 2rem auto;
 }
 .where-to-start-title {
-  font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 .where-to-start-info p {
-  font-size: 15px;
   margin-bottom: 1.5rem;
 }
 .where-to-start-btn {
@@ -285,9 +294,6 @@ header {
 #for-business-section {
   background-color: var(--dark-blue-bg-color);
 }
-.for-business-wrapper {
-  padding: 2rem 0;
-}
 .for-business-info {
   color: var(--white-color);
   margin-bottom: 3rem;
@@ -295,7 +301,8 @@ header {
 .for-business-info h2 {
   font-size: 2.8rem;
   line-height: 1.2;
-  margin: 1rem 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .for-business-info-btn {
   background-color: var(--yellow-bg-color);
@@ -306,7 +313,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  row-gap: 3em;
+  row-gap: 3rem;
 }
 .for-business-company-logo {
   display: flex;
@@ -321,9 +328,6 @@ header {
 #start-for-free-section {
   background-color: var(--blue-bg-color);
 }
-.start-for-free-wrapper {
-  padding: 3rem 0;
-}
 .start-for-free-lg-screen-img {
   display: none;
 }
@@ -331,7 +335,6 @@ header {
   color: var(--white-color);
 }
 .start-for-free-title {
-  font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 .start-for-free-btn {
@@ -342,12 +345,9 @@ header {
 /* ----------- Footer ---------- */
 
 /* ----------- Footer Codecademy Info Section ---------- */
-footer {
-  font-size: 13px;
-}
 .footer-wrapper {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 footer li {
   line-height: 2;
@@ -362,7 +362,7 @@ footer h2 {
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--black-color);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(7, auto);
 }
 .mobile {
@@ -384,7 +384,6 @@ footer h2 {
 
 /* ----------- Footer Course Catalog Section ---------- */
 .footer-course-catalog-wrapper {
-  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 .course-catalog-wrapper h3 {
@@ -393,7 +392,7 @@ footer h2 {
 .languages-list,
 .subjects-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /* ----------- Footer Policies Section ---------- */
@@ -425,32 +424,38 @@ footer h2 {
   font-size: initial;
 }
 
-/* ----------- Media Queries ---------- */
+/* ---------------- Media Queries --------------- */
 
 @media only screen and (min-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+
   /* ------ Small Media Hero Section ----- */
   .hero-signup-wrapper {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
+
   /* ------ Small Media Join Us Section ----- */
   .join-us-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .join-us-title {
-    font-size: 3rem;
+    grid-template-columns: repeat(2, 1fr);
   }
   .numbers-of-subscription {
     flex-direction: column;
     margin: 0;
     justify-self: center;
   }
-  /* ----------- Small Media Where to Start Section ---------- */
+
+  /* ------ Small Media Where to Start Section ----- */
   .where-to-start-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
   }
   .where-to-start-img-wrapper {
@@ -461,13 +466,8 @@ footer h2 {
   .where-to-start-info {
     order: -1;
   }
-  .where-to-start-title {
-    font-size: 2.5rem;
-  }
-  .where-to-start-info p {
-    font-size: initial;
-  }
-  /* ----------- Small Media For Business Section ---------- */
+
+  /* ------ Small Media For Business Section ----- */
   .for-business-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -481,7 +481,8 @@ footer h2 {
     column-gap: 1rem;
     justify-self: center;
   }
-  /* ----------- Small Media Start For Free Section ---------- */
+
+  /* ------ Small Media Start For Free Section ----- */
   .start-for-free-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -493,15 +494,19 @@ footer h2 {
     justify-self: center;
   }
   .start-for-free-title {
-    font-size: 2.8rem;
     margin-top: 0;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .container {
-    padding: 0 4rem;
+  h2 {
+    font-size: 3rem;
   }
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   /* ------Medium Media Hero Section ----- */
   .hero-signup-wrapper {
     width: 100%;
@@ -515,13 +520,12 @@ footer h2 {
   .hero-img-wrapper img {
     max-width: 26rem;
   }
+
   /* ------ Medium Media Self-learning Section ----- */
-  .self-learning-title {
-    font-size: 2.8rem;
-  }
   .self-learning-img-wrapper {
     width: 70%;
   }
+
   /* ------ Medium Media People Stories Section ----- */
   .people-stories-wrapper {
     position: relative;
@@ -537,6 +541,7 @@ footer h2 {
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
   }
+
   /* ------ Medium Media Join Us Section ----- */
   .join-us-wrapper {
     column-gap: 2rem;
@@ -549,7 +554,8 @@ footer h2 {
     align-self: center;
     justify-content: space-between;
   }
-  /* ----------- Medium Media Start For Free Section ---------- */
+
+  /* ------ Medium Media Start For Free Section ----- */
   .start-for-free-sm-screen-img {
     display: none;
   }
@@ -560,7 +566,8 @@ footer h2 {
     width: 70%;
     justify-self: end;
   }
-  /* ----------- Medium Media Footer  ---------- */
+
+  /* ------ Medium Media Footer  ----- */
   .mobile {
     grid-column: span 1;
   }
@@ -578,9 +585,11 @@ footer h2 {
 @media only screen and (min-width: 1024px) {
   .container {
     max-width: 1440px;
-    padding: 0 6rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
-  /* ----------- Large Media Header ---------- */
+
+  /* ------ Large Media Header ----- */
   .header-nav {
     display: block;
   }
@@ -605,10 +614,12 @@ footer h2 {
   .hamburger-menu {
     display: none;
   }
+
   /* ------ Large Media Hero Section ----- */
   .hero-img-wrapper img {
     max-width: 32rem;
   }
+
   /* ------ Large Media Goals-Paths Section ----- */
   .goals-list .build-career > i {
     display: none;
@@ -625,12 +636,11 @@ footer h2 {
   }
   .paths-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
   }
   .goals-title {
-    font-size: 2.9rem;
     margin-top: 0;
   }
   .path-box {
@@ -697,10 +707,10 @@ footer h2 {
   .catalog-link i {
     position: initial;
     font-size: 12px;
-    margin-left: 4px;
+    margin-left: 0.25rem;
   }
-  /* ------ Large Media Self-learning Section ----- */
 
+  /* ------ Large Media Self-learning Section ----- */
   .self-learning-wrapper {
     display: grid;
     grid-template-areas:
@@ -725,6 +735,7 @@ footer h2 {
   .self-learning-list {
     grid-area: list;
   }
+
   /* ------ Large Media People Stories Section ----- */
   .people-stories-cards-wrapper {
     display: grid;
@@ -733,6 +744,7 @@ footer h2 {
     column-gap: 1rem;
     row-gap: 0;
   }
+
   /* ------ Large Media Join Us Section ----- */
   .join-us-wrapper {
     padding-top: 4rem;
@@ -747,7 +759,12 @@ footer h2 {
   .numbers-of-subscription span:last-child {
     font-size: 1.5rem;
   }
-  /* ----------- Large Media For Business Section ---------- */
+
+  /* ------ Large Media For Business Section ----- */
+  .for-business-wrapper {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
   .for-business-companies {
     width: 100%;
     height: 70%;
@@ -756,7 +773,11 @@ footer h2 {
     row-gap: 0;
     align-self: center;
   }
-  /* ----------- Large Media Footer ---------- */
+
+  /* ------ Large Media Footer ----- */
+  footer li {
+    line-height: 1.6;
+  }
   .footer-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
