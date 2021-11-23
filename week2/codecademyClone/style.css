@@ -73,13 +73,21 @@ button:hover {
 
 /* ----------- Header ---------- */
 header {
-  border-bottom: 1px solid var(--dark-blue-bg-color);
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+.scrolled-header {
+  border-bottom: 1px solid var(--black-color);
+  background-color: var(--white-color);
 }
 .header-wrapper {
   display: flex;
   align-items: center;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .header-nav {
   display: none;
@@ -395,6 +403,7 @@ footer h2 {
 footer a:hover {
   color: var(--link-color);
 }
+
 /* ----------- Footer Codecademy Info Section ---------- */
 .footer-wrapper {
   padding-top: 1rem;
