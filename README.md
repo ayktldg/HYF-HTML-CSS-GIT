@@ -6,8 +6,7 @@ This module includes homeworks of HackYourFuture HTML/CSS/GIT Module.
 
 ### Codecademy Landing Page Clone (Week 2)
 
-Online deployment of this project is available at [Codecademy Clone](https://ayktldg.github.io/HYF-Module-HTMLCSSGIT/week2/codecademyClone/index.html)
-.
+Online deployment of this project is available at [Codecademy Clone](https://ayktldg.github.io/HYF-Module-HTMLCSSGIT/week2/codecademyClone/index.html).
 
 ### Technologies
 
